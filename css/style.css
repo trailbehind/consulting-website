@@ -29,15 +29,30 @@
 
 h2.section{
 	text-align:center;
-	margin-top:0;
+	margin:0;
 	font-weight:normal;
 	font-size:50px;
+	padding:0 0 10px 0;
 }
 
 
 /* Jumbotron */
 
 .jumbotron{
+	border-bottom: 1px solid #D6D6D6;
+}
+
+.jumbotron .container h1{
+	margin:0 0 30px 0;
+}
+
+.jumbotron .container p{
+	margin-bottom:20px;
+}
+
+/* Approach */
+
+.container.marketing{
 	border-bottom: 1px solid #D6D6D6;
 }
 
@@ -81,9 +96,14 @@ h2.portfolio{
 	width:100%;
 	z-index:3;
 	background:#D6D6D6;
+	padding-top:10px;
 }
 
 /* Technology */
+
+.container.technology{
+	border-bottom: 1px solid #D6D6D6;
+}
 
 .logo-container{
 	max-width:800px;
@@ -125,4 +145,12 @@ h2.portfolio{
 
 .contact h3{
 	text-align:center;
+}
+
+.contact .input-group{
+	margin-bottom:15px;
+}
+
+.contact textarea{
+	margin-bottom:15px;
 }
