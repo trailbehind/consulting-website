@@ -83,6 +83,38 @@ h2.portfolio{
 	background:#D6D6D6;
 }
 
+/* Technology */
+
+.logo-container{
+	max-width:800px;
+	margin:auto;
+	text-align:center;
+}
+
+.tech{
+	display:inline-block;
+	text-align:center;
+	margin:20px 10px;
+}
+
+.tech img.logo{
+	width:90px;
+	height:90px;
+	display:block;
+	opacity:.75;
+	transition:opacity .2s ease-in-out;
+	-webkit-transition:opacity .2s ease-in-out;
+	margin-bottom:5px;
+}
+
+.tech img.logo:hover{
+	opacity:1;
+}
+
+.tech a:hover{
+	text-decoration:none;
+}
+
 /* Contact */
 
 .form-contact {
