@@ -92,6 +92,7 @@ img.headshot{
 	border-radius:50%;
 	border:1px solid black;
 	display:block;
+	margin:auto;
 	opacity:.9;
 	transform:scale(.95,.95);
 	-webkit-transform:scale(.95,.95);
@@ -114,6 +115,21 @@ img.headshot:hover{
 	font-size:20px;
 	color:#797979;
 	display:block;
+}
+
+@media screen and (max-width:767px){
+	#people{
+		max-width:670px;
+	}
+	img.headshot{
+		width:120px;
+	}
+	.person .name{
+		font-size:21px;
+	}
+	.person .job{
+		font-size:18px;
+	}
 }
 
 
