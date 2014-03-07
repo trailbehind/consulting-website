@@ -24,10 +24,12 @@ function hashLinks(){
 }
 
 function navClicker(){
-	$('.navbar-default .navbar-nav>li:not(.active)>a').click(function(e){	//When clicking an inactive nav link
+	$('.navbar-default .navbar-nav>li>a').click(function(e){	
 		$nav = $(e.currentTarget.parentNode);
+		if(!($nav.hasClass('active'))){									//When clicking an inactive nav link
 		$nav.toggleClass('active');										//activate the clicked link
 		$nav.siblings().removeClass('active');							//deactivate the others
+	}							
 	});
 	$('.navbar-default a.navbar-brand').click(function(){				//When clicking the brand name
 		$('.navbar-default .navbar-nav>li').removeClass('active');		//Make all navs inactive
