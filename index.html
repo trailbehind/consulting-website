@@ -17,7 +17,6 @@
     	<![endif]-->
   	  </head>
 	  <body>
-		<a id="top"></a>
 	  	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    	<div class="container-fluid">
 	      	<!-- Brand and toggle get grouped for better mobile display -->
@@ -55,8 +54,7 @@
 	     </div> 
 	  
       <div class="container marketing">
-		  <a id="approach"></a>
-		  <h2 class="section">Approach</h2>
+		  <h2 class="section" id="approach">Approach</h2>
 	  <!-- START THE FEATURETTES -->
 	        <div class="row featurette" data-scrollReveal>
 	          <div class="col-md-7">
@@ -83,8 +81,7 @@
 		
 		<div class="background team">
 			<div class="container">
-				<a id="team"></a>
-				<h2 class="section">Team</h2>
+				<h2 class="section" id="team">Team</h2>
 				<div id="people" data-scrollReveal>
 					<div class="person" id="goldberg">
 						<img class="headshot" src="images/steve_headshot.jpg">
@@ -117,9 +114,8 @@
 		
 
   		<!-- Carousel====== -->
-     <a id="portfolio"></a>
 	 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-scrollReveal>
-		 <h2 class="section portfolio">Portfolio</h2>
+		 <h2 class="section" id="portfolio">Portfolio</h2>
        <!-- Indicators -->
        <ol class="carousel-indicators">
          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -164,8 +160,7 @@
 	
 	<div class="background technology">
 		<div class="container">
-			<a id="technology"></a>
-			<h2 class="section">Technology</h2>
+			<h2 class="section" id="technology">Technology</h2>
 			<div class="logo-container">
 				<div class="tech">
 					<a href="http://angularjs.org">
@@ -193,20 +188,29 @@
 					<span class="name">Bootstrap</span></a>
 				</div>
 			</div>
+			<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			<p class="lead"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p class="lead">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
 		</div>
 	</div>	  	  
 
 	<div class="background contact">
 		<div class="container">
-			<a id="contact"></a>
-			<h2 class="section">Contact Us</h2>
-			<h3>Do you have a project? Let us know.</h3>
+			<h2 class="section" id="contact">Contact Us</h2>
+			<h3>Would you like to discuss a project? Get in touch.</h3>
 			<form class="form-contact" role="form">
-				<div class="input-group input-group-lg">
-					<input type="text" class="form-control" placeholder="Name" required autofocus>
-					<input type="email" class="form-control" placeholder="Email" required>
+				<div class="form-group">
+					<label for="client-name">Name</label>
+					<input type="text" class="form-control" id="client-name" placeholder="Name" required>
 				</div>
-				<textarea name="message" cols="40" rows="10" class="form-control textarea" placeholder="Enter your message here." required></textarea>
+				<div class="form-group">
+					<label for="client-email">Email</label>
+					<input type="email" class="form-control" id="cient-email" placeholder="Email" required>
+				</div>
+				<div class="form-group">
+					<label for="client-message">Enter your message below.</label>
+					<textarea name="message" rows="10" class="form-control" id="client-message" placeholder="Include some basic details here. What kind of project do you have in mind? What is your budget? What is your timeline?" required></textarea>
+				</div>
 				<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
 			</form>
 		</div>

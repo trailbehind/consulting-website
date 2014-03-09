@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	hashLinks();
 	scrollLinks(1000);
-	navClicker();
+	//navClicker();
+	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 0 });
 	//window.scrollReveal = new scrollReveal();
 })
 

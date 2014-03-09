@@ -9,8 +9,8 @@ body {
 .navbar-default .navbar-nav>li:not(.active)>a:hover{
 	background-color:#E6E6E6;
 	border-bottom:4px solid black;
-	transition: border .2s ease-in-out;
-	-webkit-transition: border .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
@@ -23,14 +23,16 @@ body {
 
 .navbar-default .navbar-nav>li.active{
 	border-bottom:4px solid black;
-	transition: border .2s ease-in-out;
-	-webkit-transition: border .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li.active>a{
 	padding-bottom:11px;
 	background-color:#428bca;
 	color:white;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li.active>a:hover{
@@ -135,7 +137,7 @@ img.headshot:hover{
 
 /* Portfolio */
 
-h2.portfolio{
+#portfolio{
 	position:absolute;
 	top:0;
 	width:100%;
@@ -185,6 +187,10 @@ h2.portfolio{
 }
 
 /* Contact */
+
+h2#contact{
+	margin-top:30px;
+}
 
 .form-contact {
   max-width: 330px;
