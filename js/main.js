@@ -2,7 +2,7 @@ $(document).ready(function(){
 	hashLinks();
 	scrollLinks(1000);
 	//navClicker();
-	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 0 });
+	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 50 });
 	//window.scrollReveal = new scrollReveal();
 })
 
