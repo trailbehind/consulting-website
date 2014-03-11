@@ -1,0 +1,218 @@
+/* Flexbox mixin */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.item {
+  -webkit-box-flex: 0 1 210px;
+  -webkit-flex: 0 1 210px;
+  -ms-flex: 0 1 210px;
+  flex: 0 1 210px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2; }
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px; }
+
+/* Navbar */
+.navbar-default .navbar-nav > li:not(.active) > a:hover {
+  background-color: #E6E6E6;
+  border-bottom: 4px solid black;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  padding-bottom: 11px; }
+
+.navbar-default .navbar-brand {
+  border-right: 1px solid #e7e7e7; }
+
+.navbar-default .navbar-nav > li.active {
+  border-bottom: 4px solid black;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out; }
+
+.navbar-default .navbar-nav > li.active > a {
+  padding-bottom: 11px;
+  background-color: #428bca;
+  color: white;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out; }
+
+.navbar-default .navbar-nav > li.active > a:hover {
+  background-color: #428bca;
+  color: white; }
+
+@media screen and (max-width: 767px) {
+  ul.navbar-nav {
+    margin: 0 -15px; } }
+/* Section Headers */
+h2.section {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 50px;
+  padding: 0 0 10px 0; }
+
+/* Jumbotron */
+.jumbotron {
+  border-bottom: 1px solid #D6D6D6;
+  margin-bottom: 0; }
+
+.jumbotron h1 {
+  margin: 0 0 30px 0; }
+
+.jumbotron p {
+  margin-bottom: 20px; }
+
+/* Approach */
+.background.approach {
+  border-bottom: 2px solid #428bca;
+  padding-bottom: 30px; }
+
+/* Team */
+.background.team {
+  border-bottom: 2px solid #428bca;
+  border-top: 2px solid #e7e7e7; }
+
+.team .row {
+  text-align: center; }
+
+.team .col-md-4 {
+  float: none; }
+
+h2#team {
+  width: 100%;
+  margin-bottom: 0; }
+
+#people {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-align-content: flex-start; }
+
+.person {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+  vertical-align: top;
+  max-width: 30%;
+  min-width: 150px; }
+
+img.headshot {
+  border-radius: 50%;
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+  opacity: .9;
+  transform: scale(0.95, 0.95);
+  -webkit-transform: scale(0.95, 0.95);
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+
+img.headshot:hover {
+  opacity: 1;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1); }
+
+.person .name {
+  font-size: 24px;
+  display: block; }
+
+.person p {
+  margin-bottom: 5px; }
+
+.person .job span {
+  font-size: 16px;
+  color: #797979; }
+
+.person .job {
+  font-size: 18px; }
+
+@media screen and (max-width: 767px) {
+  #people {
+    max-width: 670px; }
+
+  img.headshot {
+    width: 120px; }
+
+  .person .name {
+    font-size: 18px; }
+
+  .person .job {
+    font-size: 14px; } }
+/* Portfolio */
+#portfolio {
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  width: 100%;
+  z-index: 3;
+  background: #D6D6D6;
+  padding-top: 10px; }
+
+/* Technology */
+.background.technology {
+  border-bottom: 2px solid #e7e7e7;
+  border-top: 2px solid #428bca; }
+
+.logo-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center; }
+
+.tech {
+  display: inline-block;
+  text-align: center;
+  margin: 20px 10px; }
+
+.tech img.logo {
+  width: 90px;
+  height: 90px;
+  display: block;
+  opacity: .65;
+  transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  margin-bottom: 5px; }
+
+.tech img.logo:hover {
+  opacity: 1;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1); }
+
+.tech a:hover {
+  text-decoration: none; }
+
+/* Contact */
+.background.contact {
+  background-color: #3D3D3D;
+  color: #F8F8F8;
+  border-top: 2px solid #428bca; }
+
+.form-contact {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto; }
+
+.contact h3 {
+  text-align: center; }
+
+.contact .input-group {
+  margin-bottom: 15px; }
+
+.contact textarea {
+  margin-bottom: 15px; }
