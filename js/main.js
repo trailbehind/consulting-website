@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	hashLinks();
 	scrollLinks(1000);
-	//navClicker();
 	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 50 });
+	$(".jumbotron h1").fadeTo(1250, 1, "easeInOutCubic", function(){
+		$(".jumbotron h2").fadeTo(1500, 1, "easeInOutCubic");
+	});
 	//window.scrollReveal = new scrollReveal();
 })
 
@@ -22,17 +24,4 @@ function scrollLinks(speed){
 
 function hashLinks(){
 	
-}
-
-function navClicker(){
-	$('.navbar-default .navbar-nav>li>a').click(function(e){	
-		$nav = $(e.currentTarget.parentNode);
-		if(!($nav.hasClass('active'))){									//When clicking an inactive nav link
-		$nav.toggleClass('active');										//activate the clicked link
-		$nav.siblings().removeClass('active');							//deactivate the others
-	}							
-	});
-	$('.navbar-default a.navbar-brand').click(function(){				//When clicking the brand name
-		$('.navbar-default .navbar-nav>li').removeClass('active');		//Make all navs inactive
-	});
 }

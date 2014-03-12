@@ -48,14 +48,71 @@
 	     <div class="jumbotron" id="top">
 	       <div class="container">
 	         <h1>Welcome to Uncharted Apps.</h1>
-	         <p>Uncharted Apps is a mobile and web development contracting firm, specializing in maply, whirlyglobe, and route-me technologies on Android and iOS platforms.</p>
+	         <h2>To cut a new path, inquire within.</h2>
 	         <p style="text-align:center"><a class="btn btn-primary btn-lg" role="button" href="#contact">Get in  touch &raquo;</a></p>
 	       </div>
 	     </div> 
 	  
       <div class="background approach">
+		 <div class="container">	
+			<div class="row">
+				<div class="col-md-6">  
+		  	  	  <h3>Some of our clients need an invention,<br>
+				  and some need an invention built.</h3>
+				</div>
+				<div class="col-md-6">
+					<div class="solar_container">
+					    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="solar-system">
+							<defs>
+							    <filter id="lighting">
+									<feGaussianBlur in = "SourceAlpha" stdDeviation = "4" result = "blur1"/>
+								        <feSpecularLighting result = "specOut" in = "blur1" specularExponent = "20" lighting-color = "#bbbbbb">
+								            <fePointLight x = "50" y = "100" z = "200"/>
+								        </feSpecularLighting>
+								        <feComposite in = "SourceGraphic" in2 = "specOut" operator = "arithmetic" k1 = "0" k2 = "1" k3 = "1" k4 = "0"/>
+							    </filter>
+								<filter id="blur" x="0" y="0">
+								      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+								</filter>
+								<filter id = "lighting2">
+								        <feGaussianBlur in = "SourceAlpha" stdDeviation = "8" result = "blur1"/>
+								        <feDiffuseLighting result = "diffOut" in = "SourceGraphic" diffuseConstant = "20" lighting-color = "white">
+								            <feSpotLight x = "800" y = "800" z = "400" pointsAtX = "0" pointsAtY = "0" pointsAtZ = "0" limitingConeAngle = "9"/>
+								        </feDiffuseLighting>
+								        <feComposite in = "SourceGraphic" in2 = "diffOut" operator = "arithmetic" k1 = "1" k2 = "0" k3 = "0" k4 = "0"/>
+								</filter>
+							  </defs>
+							<g id="sun">
+					      	  <circle id="sun2" cx="200" cy="200" r="15"></circle>
+							  <circle id="sun1" cx="200" cy="200" r="10"></circle>
+					        </g>
+					        <g id="ring1">
+					          <circle cx="200" cy="200" r="60"></circle>
+					        </g>
+					        <g id="ring2">
+					          <circle cx="200" cy="200" r="125"></circle>
+					        </g>
+					        <g id="orbit1" class="orbit_fast">
+					          <circle class="path" cx="200" cy="200" r="78" filter="url(#lighting)"></circle>
+					          <circle class="planet" cx="145" cy="200" r="25" filter="url(#lighting2)"></circle>
+					          <text x="145" y="200" font-size="13px" font-variant="small-caps">
+					            <tspan dx = "-16" dy = "3px">Invent</tspan>
+					          </text>
+					        </g>
+					      <g id="orbit2" class="orbit_slow">
+					          <circle class="path" cx="200" cy="200" r="160" filter="url(#lighting)"></circle>
+					          <circle class="planet" cx="75" cy="200" r="35" filter="url(#lighting2)"></circle>
+					          <text x="75" y="200" font-size="15px" font-variant="small-caps">
+					            <tspan dx = "-24" dy = "3">Execute</tspan>
+					          </text>
+					        </g>
+					    </svg>
+					  </div>
+					</div>
+				</div>
+			</div>
+		  
 		  <div class="container marketing">
-			  <h2 class="section" id="approach">Approach</h2>
 		  <!-- START THE FEATURETTES -->
 		        <div class="row featurette"  >
 		          <div class="col-md-7">

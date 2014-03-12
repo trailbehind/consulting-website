@@ -17,7 +17,9 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px; }
+  padding-top: 50px; 
+  backface-visibility:hidden;
+}
 
 /* Navbar */
 .navbar-default .navbar-nav > li:not(.active) > a:hover {
@@ -30,7 +32,9 @@ body {
   padding-bottom: 11px; }
 
 .navbar-default .navbar-brand {
-  border-right: 1px solid #e7e7e7; }
+  border-right: 1px solid #e7e7e7;
+  font-variant:small-caps;
+}
 
 .navbar-default .navbar-nav > li.active {
   border-bottom: 4px solid black;
@@ -57,28 +61,125 @@ h2.section {
   margin-top: 20px;
   font-weight: normal;
   font-size: 50px;
-  padding: 0 0 10px 0; }
+  padding: 0 0 10px 0;
+  font-variant:small-caps;
+ }
 
 /* Jumbotron */
 .jumbotron {
   border-bottom: 1px solid #D6D6D6;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+ }
 
-.jumbotron h1 {
-  margin: 0 0 30px 0; }
+.jumbotron h1{
+margin:0 0 30px 0;
+text-align:center;
+opacity:0;
+}
+
+.jumbotron h2{
+text-align:center;
+margin-bottom:20px;
+opacity:0;
+}
 
 .jumbotron p {
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 
 /* Approach */
 .background.approach {
   border-bottom: 2px solid #428bca;
   padding-bottom: 30px; }
+ 
+.approach .container .row h3{
+  	margin:70px auto 0 auto;
+	max-width:445px;
+	font-size:25px;
+  }
+
+.solar_container{
+  width:400px;
+  height:400px;
+  margin:auto;
+}
+
+.intro{
+	float:left;
+}
+
+#solar-system{
+  width:400px;
+  height:400px;
+  margin:auto;
+  display:block;
+}
+
+g{
+  -webkit-transform-origin:center;
+  display:block;
+  margin:auto;
+}
+
+g text{
+  fill:white;
+}
+
+#sun2{
+  fill:#FF8F00;
+  opacity:.6;
+}
+
+#sun1{
+	fill:#FFFF00;
+}
+
+#ring1 circle{
+  stroke:#D6D6D6;
+  stroke-width:2px;
+  fill:transparent;
+}
+
+.planet{
+  fill:#428bca;
+  stroke:#357ebd;
+}
+
+.path{
+  fill:#3B7DB6;
+  opacity:.07;
+}
+
+
+#ring2 circle{
+   stroke:#C1C1C1;
+  stroke-width:2px;
+  fill:transparent;
+}
+
+
+.orbit_slow{
+  -webkit-animation-name:orbit_slow;
+  -webkit-animation-duration:13s;
+  -webkit-animation-iteration-count:infinite;
+  -transition: all 500ms linear;
+ -webkit-animation-timing-function:linear;
+}
+
+.orbit_fast{
+  -webkit-animation-name:orbit_slow;
+  -webkit-animation-duration:9s;
+  -webkit-animation-iteration-count:infinite;
+  -transition: all 500ms linear;
+ -webkit-animation-timing-function:linear;
+}
+
 
 /* Team */
 .background.team {
   border-bottom: 2px solid #428bca;
   border-top: 2px solid #e7e7e7; }
+
+
 
 .team .row {
   text-align: center; }
@@ -129,7 +230,9 @@ img.headshot:hover {
 
 .person .name {
   font-size: 24px;
-  display: block; }
+  display: block;
+  font-variant:small-caps;
+ }
 
 .person p {
   margin-bottom: 5px; }
@@ -216,3 +319,51 @@ img.headshot:hover {
 
 .contact textarea {
   margin-bottom: 15px; }
+
+  /* Animation */
+  
+  @-webkit-keyframes swap{
+	  0%{
+		  -webkit-transform:rotate(0deg);
+	  }
+	  40%{
+	  	-webkit-transform:rotate(0deg);
+		opacity:1;
+	  }
+	  50%{
+	  	-webkit-transform:rotate(-90deg);
+		opacity:.75;
+	  }
+	  60%{
+	  	-webkit-transform:rotate(-180deg);
+		opacity:1;
+		
+	  }
+	  100%{
+	  	-webkit-transform:rotate(-180deg);
+	  }
+  }
+  
+  @-webkit-keyframes orbit_slow{
+    0%{
+      -webkit-transform:rotate(0deg);
+    }
+    50%{
+      -webkit-transform:rotate(180deg);
+    }
+    100%{
+       -webkit-transform:rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes orbit_fast{
+    0%{
+      -webkit-transform:rotate(0deg);
+    }
+    50%{
+      -webkit-transform:rotate(180deg);
+    }
+    100%{
+       -webkit-transform:rotate(360deg);
+    }
+  }
