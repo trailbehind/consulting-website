@@ -166,16 +166,22 @@ g text{
   -webkit-animation-name:orbit_slow;
   -webkit-animation-duration:13s;
   -webkit-animation-iteration-count:infinite;
-  -transition: all 500ms linear;
  -webkit-animation-timing-function:linear;
+ animation-name:orbit_slow;
+ animation-duration:13s;
+ animation-iteration-count:infinite;
+animation-timing-function:linear;
 }
 
 .orbit_fast{
   -webkit-animation-name:orbit_slow;
   -webkit-animation-duration:9s;
   -webkit-animation-iteration-count:infinite;
-  -transition: all 500ms linear;
  -webkit-animation-timing-function:linear;
+ animation-name:orbit_slow;
+ animation-duration:9s;
+ animation-iteration-count:infinite;
+animation-timing-function:linear;
 }
 
 
@@ -327,28 +333,6 @@ img.headshot:hover {
 
   /* Animation */
   
-  @-webkit-keyframes swap{
-	  0%{
-		  -webkit-transform:rotate(0deg);
-	  }
-	  40%{
-	  	-webkit-transform:rotate(0deg);
-		opacity:1;
-	  }
-	  50%{
-	  	-webkit-transform:rotate(-90deg);
-		opacity:.75;
-	  }
-	  60%{
-	  	-webkit-transform:rotate(-180deg);
-		opacity:1;
-		
-	  }
-	  100%{
-	  	-webkit-transform:rotate(-180deg);
-	  }
-  }
-  
   @-webkit-keyframes orbit_slow{
     0%{
       -webkit-transform:rotate(0deg);
@@ -370,5 +354,29 @@ img.headshot:hover {
     }
     100%{
        -webkit-transform:rotate(360deg);
+    }
+  }
+  
+  @keyframes orbit_slow{
+    0%{
+      transform:rotate(0deg);
+    }
+    50%{
+      transform:rotate(180deg);
+    }
+    100%{
+       transform:rotate(360deg);
+    }
+  }
+
+  @keyframes orbit_fast{
+    0%{
+      transform:rotate(0deg);
+    }
+    50%{
+      transform:rotate(180deg);
+    }
+    100%{
+       transform:rotate(360deg);
     }
   }
