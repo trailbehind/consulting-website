@@ -155,6 +155,10 @@ g text{
   fill:transparent;
 }
 
+.solar_container tspan{
+	text-shadow:black -1px 1px;
+}
+
 
 .orbit_slow{
   -webkit-animation-name:orbit_slow;
