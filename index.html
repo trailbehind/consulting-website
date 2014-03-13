@@ -75,9 +75,9 @@
 								      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
 								</filter>
 								<filter id = "lighting2">
-								        <feGaussianBlur in = "SourceAlpha" stdDeviation = "8" result = "blur1"/>
+								        <feGaussianBlur in = "SourceAlpha" stdDeviation = "9" result = "blur1"/>
 								        <feDiffuseLighting result = "diffOut" in = "SourceGraphic" diffuseConstant = "20" lighting-color = "white">
-								            <feSpotLight x = "800" y = "800" z = "400" pointsAtX = "0" pointsAtY = "0" pointsAtZ = "0" limitingConeAngle = "9"/>
+								            <feSpotLight x = "200" y = "200" z = "500" pointsAtX = "-20" pointsAtY = "-20" pointsAtZ = "40" limitingConeAngle = "13"/>
 								        </feDiffuseLighting>
 								        <feComposite in = "SourceGraphic" in2 = "diffOut" operator = "arithmetic" k1 = "1" k2 = "0" k3 = "0" k4 = "0"/>
 								</filter>
