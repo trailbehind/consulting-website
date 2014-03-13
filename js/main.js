@@ -11,7 +11,7 @@ $(document).ready(function(){
 function scrollLinks(speed){
 	var $root = $('html, body');
 	var $navbar = $('.navbar-fixed-top')
-	$('a:not(.carousel-control)').click(function(){
+	$('.navbar-default a:not(.carousel-control)').click(function(){
 	    var href = $.attr(this, 'href');
 		$root.animate({
 			scrollTop: $( $(this).attr('href') ).offset().top - ($navbar.height())
