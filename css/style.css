@@ -74,6 +74,8 @@ h2.section {
 margin:0 0 30px 0;
 text-align:center;
 opacity:0;
+color:#6C6C6C;
+text-shadow:black 1px 1px 0px, black 2px 2px 0px;
 }
 
 .jumbotron h2{
