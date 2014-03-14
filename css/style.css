@@ -233,52 +233,54 @@ h2#team {
   margin: 20px auto;
   vertical-align: top;
   max-width: 30%;
-  min-width: 150px; }
+  min-width: 150px;
+  position:relative;
+}
+
+.person .label{
+	position:absolute;
+	width:100%;
+	background-color:white;
+	bottom:0;
+	left:0;
+	opacity:.75;
+	color:black;
+	padding:7px;
+}
+
+.person .label strong{
+	font-weight:bold;
+	font-size:16px;
+	display:block;
+	margin-bottom:2px;
+}
+
+.person .label span{
+	font-weight:normal;
+	font-size:14px;
+}
 
 img.headshot {
-  border-radius: 50%;
-  border: 1px solid black;
   display: block;
   margin: auto;
   opacity: .9;
-  transform: scale(0.95, 0.95);
-  -webkit-transform: scale(0.95, 0.95);
   transition: opacity .2s ease-in-out, transform .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out; }
 
 img.headshot:hover {
   opacity: 1;
-  transform: scale(1, 1);
-  -webkit-transform: scale(1, 1); }
-
-.person .name {
-  font-size: 24px;
-  display: block;
-  font-variant:small-caps;
- }
-
-.person p {
-  margin-bottom: 5px; }
-
-.person .job span {
-  font-size: 16px;
-  color: #797979; }
-
-.person .job {
-  font-size: 18px; }
+}
 
 @media screen and (max-width: 767px) {
-  #people {
-    max-width: 670px; }
+  .person {
+    padding:0; }
 
   img.headshot {
-    width: 120px; }
+    width: 140px; }
 
-  .person .name {
-    font-size: 18px; }
-
-  .person .job {
-    font-size: 14px; } }
+  .person .label span {
+    font-size: 10px; }
+}
 /* Portfolio */
 #portfolio {
   position: absolute;
