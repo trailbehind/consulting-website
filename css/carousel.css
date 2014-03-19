@@ -1,3 +1,6 @@
+---
+---
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -54,12 +57,12 @@ ol.carousel-indicators li{
 }
 
 #gaia{
-	background-image:url('/images/gaia_slide.gif');
+	background-image:url('{{ site.baseurl }}/images/gaia_slide.gif');
 	opacity:.9;
 }
 
 #cloud{
-	background-image:url('/images/cloud_slide_3.gif');
+	background-image:url('{{ site.baseurl }}/images/cloud_slide_3.gif');
 }
 
 /* MARKETING CONTENT
