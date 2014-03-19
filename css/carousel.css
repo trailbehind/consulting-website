@@ -17,7 +17,7 @@
   text-align:left;
   position:static;
   color:black;
-  background-color:rgba(255, 255, 255, 0.75);
+  background-color:rgba(255, 255, 255, 0.9);
   border:1px solid #e7e7e7;
   border-radius:25px;
   box-shadow:2px 2px 4px #CFCFCF;
@@ -55,6 +55,11 @@ ol.carousel-indicators li{
 
 #gaia{
 	background-image:url('/images/gaia_slide.gif');
+	opacity:.9;
+}
+
+#cloud{
+	background-image:url('/images/cloud_slide_3.gif');
 }
 
 /* MARKETING CONTENT
