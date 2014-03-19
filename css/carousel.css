@@ -20,6 +20,7 @@
   background-color:rgba(255, 255, 255, 0.75);
   border:1px solid #e7e7e7;
   border-radius:25px;
+  box-shadow:2px 2px 4px #CFCFCF;
 }
 
 .carousel-caption p, .carousel-caption h1{

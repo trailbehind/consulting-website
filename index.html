@@ -1,3 +1,7 @@
+---
+title: Uncharted Apps
+---
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -5,9 +9,9 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<title>Uncharted Apps</title>
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/carousel.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+    	<link href="{{ BASE_PATH }}/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{{ BASE_PATH }}/css/carousel.css" rel="stylesheet">
+		<link href="{{ BASE_PATH }}/css/style.css" rel="stylesheet">
 
     	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +39,7 @@
 		        <ul class="nav navbar-nav">
 		          <li><a href="#approach">Approach</a></li>
 		          <li><a href="#team">Team</a></li>
-				  <li><a href="#Creations">Creations</a></li>
+				  <li><a href="#creations">Creations</a></li>
 				  <li><a href="#technology">Technology</a></li>
 				  <li><a href="#contact">Contact</a></li>
 		        </ul>
@@ -141,9 +145,9 @@
 		</div>
 		
 		<div class="background team">
+			<h2 class="section" id="team">Team</h2>
 			<div class="container">
 				<div class="row">
-					<h2 class="section" id="team">Team</h2>
 					<div class="person col-md-3" id="andrew">
 						<a data-toggle="modal" data-target="#andrewBio"><img class="headshot" src="images/andrew_johnson.png">
 							<div class="label">
@@ -237,8 +241,8 @@
      </div><!-- /.carousel -->
 	
 	<div class="background technology">
+		<h2 class="section" id="technology">Technology</h2>
 		<div class="container">
-			<h2 class="section" id="technology">Technology</h2>
 			<div class="logo-container">
 				<div class="tech">
 					<a href="http://angularjs.org">
@@ -273,8 +277,8 @@
 	</div>	  	  
 
 	<div class="background contact">
+		<h2 class="section" id="contact">Contact Us</h2>
 		<div class="container">
-			<h2 class="section" id="contact">Contact Us</h2>
 			<h3>Would you like to discuss a project? Get in touch.</h3>
 			<form class="form-contact" role="form">
 				<div class="form-group">
@@ -294,15 +298,7 @@
 		</div>
 	</div>
 			
-		
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/holder.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/scrollReveal.js"></script>
+	
 	<!-- Modal Bios -->
 	<div class="modal fade" id="andrewBio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -419,5 +415,14 @@
 	
 	
 	<!-- /modal bios-->
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ BASE_PATH }}/js/bootstrap.min.js"></script>
+	<script src="{{ BASE_PATH }}/js/holder.js"></script>
+	<script src="{{ BASE_PATH }}/js/main.js"></script>
+	<script src="{{ BASE_PATH }}/js/scrollReveal.js"></script>
   </body>
 </html>

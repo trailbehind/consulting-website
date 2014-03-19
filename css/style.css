@@ -57,10 +57,13 @@ body {
 /* Section Headers */
 h2.section {
   text-align: center;
-  margin-top: 20px;
+  border-bottom: 2px solid #e7e7e7;
+  border-top: 2px solid #e7e7e7;
+  background-color:#f8f8f8;
+  margin:0;
+  padding:0;
   font-weight: normal;
   font-size: 50px;
-  padding: 0 0 10px 0;
   font-variant:small-caps;
  }
 
@@ -89,7 +92,6 @@ opacity:0;
 
 /* Approach */
 .background.approach {
-  border-bottom: 2px solid #428bca;
   padding-bottom: 30px; }
  
 .approach .container .row h3{
@@ -198,11 +200,6 @@ animation-timing-function:linear;
 }
 
 /* Team */
-.background.team {
-  border-bottom: 2px solid #428bca;
-  border-top: 2px solid #e7e7e7; }
-
-
 
 .team .row {
   text-align: center; }
@@ -288,16 +285,8 @@ img.headshot:hover {
   .person .label span {
     font-size: 12px; }
 }
-/* Portfolio */
-#creations {
-  border-bottom: 2px solid #428bca;
-  margin:0;
-  padding:0; }
 
 /* Technology */
-.background.technology {
-  border-bottom: 2px solid #e7e7e7;
-  border-top: 2px solid #428bca; }
 
 .logo-container {
   max-width: 800px;
@@ -332,7 +321,12 @@ img.headshot:hover {
 .background.contact {
   background-color: #3D3D3D;
   color: #F8F8F8;
-  border-top: 2px solid #428bca; }
+}
+
+  h2#contact{
+	  border-bottom:none;
+	  background-color:transparent;
+  }
 
 .form-contact {
   max-width: 330px;
