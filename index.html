@@ -13,14 +13,14 @@ title: Uncharted Apps
 						  <span class="icon-bar"></span>
 						  <span class="icon-bar"></span>
 	        		</button>
-	        		<a class="navbar-brand" href="#top">Uncharted Apps</a>
+	        		<a class="navbar-brand" href="#top">UNCHARTED APPS</a>
 	      	  	</div>
 
 		      <!-- Collect the nav links, forms, and other content for toggling -->
 		      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		        <ul class="nav navbar-nav">
-		          <li><a href="#approach">Approach</a></li>
-		          <li><a href="#team">Team</a></li>
+		          <li><a href="#ideas">Ideas</a></li>
+		          <li><a href="#team">People</a></li>
 				  <li><a href="#creations">Creations</a></li>
 				  <li><a href="#technology">Technology</a></li>
 				  <li><a href="#contact">Contact</a></li>
@@ -35,80 +35,70 @@ title: Uncharted Apps
 	       <div class="container">
 	         <h1>Welcome to Uncharted Apps.</h1>
 	         <h2>To cut a new path, inquire within.</h2>
+			<div class="solar_container">
+			    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="400px" height="400px" viewBox="0 0 400 400" id="solar-system">
+					<defs>
+					    <filter id="lighting">
+							<feGaussianBlur in = "SourceAlpha" stdDeviation = "4" result = "blur1"/>
+						        <feSpecularLighting result = "specOut" in = "blur1" specularExponent = "20" lighting-color = "#bbbbbb">
+						            <fePointLight x = "50" y = "100" z = "200"/>
+						        </feSpecularLighting>
+						        <feComposite in = "SourceGraphic" in2 = "specOut" operator = "arithmetic" k1 = "0" k2 = "1" k3 = "1" k4 = "0"/>
+					    </filter>
+						<filter id="blur" x="0" y="0">
+						      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+						</filter>
+						<filter id = "lighting2">
+						        <feGaussianBlur in = "SourceAlpha" stdDeviation = "9" result = "blur1"/>
+						        <feDiffuseLighting result = "diffOut" in = "SourceGraphic" diffuseConstant = "20" lighting-color = "white">
+						            <feSpotLight x = "200" y = "200" z = "500" pointsAtX = "-20" pointsAtY = "-20" pointsAtZ = "40" limitingConeAngle = "13"/>
+						        </feDiffuseLighting>
+						        <feComposite in = "SourceGraphic" in2 = "diffOut" operator = "arithmetic" k1 = "1" k2 = "0" k3 = "0" k4 = "0"/>
+						</filter>
+					  </defs>
+					<g transform="translate(200, 200)">
+						<g id="sun">
+				      	  <circle id="sun2" cx="0" cy="0" r="15"></circle>
+						  <circle id="sun1" cx="0" cy="0" r="10"></circle>
+				        </g>
+				        <g id="ring1">
+				          <circle cx="0" cy="0" r="60"></circle>
+				        </g>
+				        <g id="ring2">
+				          <circle cx="0" cy="0" r="125"></circle>
+				        </g>
+				        <g id="orbit1" class="orbit_fast">
+				          <circle class="path" cx="0" cy="0" r="78" ></circle>
+				          <circle class="planet" cx="-55" cy="0" r="25" filter="url(#lighting2)"></circle>
+				          <text x="-55" y="0" font-size="14px" font-variant="small-caps">
+				            <tspan dx = "-18" dy = "3px">Invent</tspan>
+				          </text>
+				        </g>
+				      <g id="orbit2" class="orbit_slow">
+				          <circle class="path" cx="0" cy="0" r="160"></circle>
+				          <circle class="planet" cx="-125" cy="0" r="35" filter="url(#lighting2)"></circle>
+				          <text x="-125" y="0" font-size="16px" font-variant="small-caps">
+				            <tspan dx = "-26" dy = "3">Execute</tspan>
+				          </text>
+				        </g>
+					</g>
+			    </svg>
+			  </div>
 	         <p style="text-align:center"><a class="btn btn-primary btn-lg" role="button" href="#contact">Get in  touch &raquo;</a></p>
 	       </div>
 	     </div> 
 	  
-      <div class="background approach">
-		 <div class="container" id="approach">	
-			<div class="row">
-				<div class="col-md-6">  
-		  	  	  <h3>Some of our clients need an invention,<br>
-				  and some need an invention built.</h3>
-				</div>
-				<div class="col-md-6">
-					<div class="solar_container">
-					    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="400px" height="400px" viewBox="0 0 400 400" id="solar-system">
-							<defs>
-							    <filter id="lighting">
-									<feGaussianBlur in = "SourceAlpha" stdDeviation = "4" result = "blur1"/>
-								        <feSpecularLighting result = "specOut" in = "blur1" specularExponent = "20" lighting-color = "#bbbbbb">
-								            <fePointLight x = "50" y = "100" z = "200"/>
-								        </feSpecularLighting>
-								        <feComposite in = "SourceGraphic" in2 = "specOut" operator = "arithmetic" k1 = "0" k2 = "1" k3 = "1" k4 = "0"/>
-							    </filter>
-								<filter id="blur" x="0" y="0">
-								      <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
-								</filter>
-								<filter id = "lighting2">
-								        <feGaussianBlur in = "SourceAlpha" stdDeviation = "9" result = "blur1"/>
-								        <feDiffuseLighting result = "diffOut" in = "SourceGraphic" diffuseConstant = "20" lighting-color = "white">
-								            <feSpotLight x = "200" y = "200" z = "500" pointsAtX = "-20" pointsAtY = "-20" pointsAtZ = "40" limitingConeAngle = "13"/>
-								        </feDiffuseLighting>
-								        <feComposite in = "SourceGraphic" in2 = "diffOut" operator = "arithmetic" k1 = "1" k2 = "0" k3 = "0" k4 = "0"/>
-								</filter>
-							  </defs>
-							<g transform="translate(200, 200)">
-								<g id="sun">
-						      	  <circle id="sun2" cx="0" cy="0" r="15"></circle>
-								  <circle id="sun1" cx="0" cy="0" r="10"></circle>
-						        </g>
-						        <g id="ring1">
-						          <circle cx="0" cy="0" r="60"></circle>
-						        </g>
-						        <g id="ring2">
-						          <circle cx="0" cy="0" r="125"></circle>
-						        </g>
-						        <g id="orbit1" class="orbit_fast">
-						          <circle class="path" cx="0" cy="0" r="78" ></circle>
-						          <circle class="planet" cx="-55" cy="0" r="25" filter="url(#lighting2)"></circle>
-						          <text x="-55" y="0" font-size="14px" font-variant="small-caps">
-						            <tspan dx = "-18" dy = "3px">Invent</tspan>
-						          </text>
-						        </g>
-						      <g id="orbit2" class="orbit_slow">
-						          <circle class="path" cx="0" cy="0" r="160"></circle>
-						          <circle class="planet" cx="-125" cy="0" r="35" filter="url(#lighting2)"></circle>
-						          <text x="-125" y="0" font-size="16px" font-variant="small-caps">
-						            <tspan dx = "-26" dy = "3">Execute</tspan>
-						          </text>
-						        </g>
-							</g>
-					    </svg>
-					  </div>
-					</div>
-				</div>
-			</div>
-		  
+      <div class="background ideas">
+		 <div class="container" id="ideas">	
+		  	 <h2>We can execute a big spec or spec a big idea, and we know when to do which.</h2>
 		  <div class="container marketing">
 		  <!-- START THE FEATURETTES -->
 		        <div class="row featurette"  >
 		          <div class="col-md-7">
-		            <h2 class="featurette-heading">1.<span class="text-muted">Waterfall</span></h2>
-		            <p class="lead">For projects with detailed specifications, we build, test, and release using more of a waterfall approach, but with more iterations and earlier previews of software in development.</p>
+		            <p class="lead">For projects with detailed specifications, pixel-perfect designs, and firm time constraints, we build, test, and release with a more classic ideas, based on milestones and deliverables. At the same time, we show the work in progress, and provide clients with the greatest possible leeway for change and innovation.</p>
 		          </div>
 		          <div class="col-md-5">
-		            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+		            <img class="featurette-image img-responsive" data-src="holder.js/400x400/auto" alt="Generic placeholder image">
 		          </div>
 		        </div>
 
@@ -116,18 +106,17 @@ title: Uncharted Apps
 
 		        <div class="row featurette"  >
 		          <div class="col-md-5">
-		            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+		            <img class="featurette-image img-responsive" data-src="holder.js/400x400/auto" alt="Generic placeholder image">
 		          </div>
 		          <div class="col-md-7">
-		            <h2 class="featurette-heading">2. <span class="text-muted">Iteration</span></h2>
-		            <p class="lead">For greenfield projects, particularly to help start-ups in the pre-launch phase, we follow more of an agile methodology, with quick mock-ups and working prototypes built at the earliest moments, and built and rebuilt until user engagement metrics are off the charts.</p>
+		            <p class="lead"> For clients seeking UX design and innovation, we focus the methodology more on quick mock-ups and working prototypes, built at the earliest moments, and rebuilt iteratively until user engagement metrics are off the charts.</p>
 		          </div>
 		        </div>
 			</div>
 		</div>
-		
+	</div>
+		<h2 class="section" id="team">People</h2>
 		<div class="background team">
-			<h2 class="section" id="team">Team</h2>
 			<div class="container">
 				<div class="row">
 					<div class="person col-md-3" id="andrew">
@@ -195,25 +184,24 @@ title: Uncharted Apps
          <li data-target="#myCarousel" data-slide-to="2"></li>
        </ol>
        <div class="carousel-inner">
-         <div class="item active" id="gaia">
+         <div class="item active" id="gaia-slide">
              <div class="carousel-caption">
                <h1>App: Gaia GPS</h1>
                <p><a href="https://www.apple.com/your-verse/elevating-expedition/">Recently featured by Apple</a>, Gaia GPS is the ultimate app for the backcountry. Across iOS, Android, and the web, Gaia GPS provides a complete platform for mapping and exploration, and showcases our skill in building powerful applications.</p>
              </div>
          </div>
-         <div class="item" id="cloud">
+         <div class="item" id="cloud-slide">
              <div class="carousel-caption">
                <h1>Service: Cloud Sync API</h1>
                <p>Built on Postgres, Django, and Amazon EC2, our cloud-sync API enables many of the apps we built to synchronize data between mobile devices and the web. Thousands of users per day sync data to the Cloud services we built.</p>
 			 </div>
 			 
            </div>
-         <div class="item">
-           
+         <div class="item" id="site-slide">
            <div class="container">
              <div class="carousel-caption">
                <h1>Website: UnchartedApps.com</h1>
-               <p>Built on Jekyll and GitHub pages, with a dash of Jquery, we hope this website demonstrates a modern design sensibility and an elegant solution to the problem of letting you know what we do.</p> 
+               <p>Built on Jekyll-Bootstrap and GitHub pages, with a dash of Jquery, we hope this website demonstrates a modern design sensibility and an elegant solution to the problem of letting you know what we do.</p> 
              </div>
            </div>
          </div>
@@ -252,11 +240,22 @@ title: Uncharted Apps
 					<span class="name">Bootstrap</span></a>
 				</div>
 			</div>
-			<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			<p class="lead"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-			<p class="lead">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-		</div>
-	</div>	  	  
+			<div class="row">
+				<div class="col-md-4">
+					<p class="lead"><strong>Web and Mobile</strong></p>
+					<p class="lead">We build apps on one or sometimes across all of iOS, Android, and the web. We can effectively build native mobile apps, that also work responsively on the web.</p>
+				</div>
+				<div class="col-md-4">
+					<p class="lead"><strong>Mapping Libraries</strong></p>
+					<p class="lead">We have a unique depth of experience working with many of the best mobile mapping toolkits of the day, including Maply/WhirlyGlobe, Route-me, Apple Mapkit, Google Maps, and Nutiteq. On the web, we have deployed Leaflet, OpenLayers, and Google Maps.</p>
+				</div>
+				<div class="col-md-4">
+					<p class="lead"><strong>Web Design and Stack</strong></p>
+					<p class="lead">We use the best technologies for creating beautiful and functional websites, including HTML5, Javascript, Angular.js, and Bootstrap. On the back-end, we tend to use Amazon EC2, Django/Python, and Postgres, but have experience in many others.</p>
+				</div>	
+			</div>
+	</div>
+</div>	  	  
 
 	<div class="background contact">
 		<h2 class="section" id="contact">Contact Us</h2>

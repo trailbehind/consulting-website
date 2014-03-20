@@ -26,11 +26,11 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : /consulting-website
+baseurl : '/consulting-website'
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 
-baseurl : '/consulting-website'
 JB :
   version : 0.3.0
 

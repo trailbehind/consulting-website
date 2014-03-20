@@ -1,3 +1,34 @@
+---
+---
+
+/* fonts */
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 57px;
+    font-size: 43px;
+    margin: 0 0 23px 0;
+    }
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    }
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+	
+.navbar{
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+	letter-spacing: 2px;
+	}
+
 /* Flexbox mixin */
 .wrapper {
   display: -webkit-box;
@@ -18,6 +49,12 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px; 
+  background: url('{{ site.baseurl }}/images/stardust_@2X.png') repeat 0 0;
+}
+
+.background{
+	background-color:white;
+	padding-bottom:30px;
 }
 
 /* Navbar */
@@ -31,7 +68,7 @@ body {
   padding-bottom: 11px; }
 
 .navbar-default .navbar-brand {
-  border-right: 1px solid #e7e7e7;
+  border-right: 1px solid #D9D9D9;
   font-variant:small-caps;
 }
 
@@ -53,7 +90,9 @@ body {
 
 @media screen and (max-width: 767px) {
   ul.navbar-nav {
-    margin: 0 -15px; } }
+    margin: 0 -15px; }
+}
+
 /* Section Headers */
 h2.section {
   text-align: center;
@@ -61,53 +100,42 @@ h2.section {
   border-top: 2px solid #e7e7e7;
   background-color:#f8f8f8;
   margin:0;
-  padding:0;
+  padding:5px;
   font-weight: normal;
-  font-size: 50px;
-  font-variant:small-caps;
+  font-size: 40px;
+  text-transform:uppercase;
  }
 
 /* Jumbotron */
 .jumbotron {
   border-bottom: 1px solid #D6D6D6;
   margin-bottom: 0;
+  background-color:transparent;
  }
 
 .jumbotron h1{
 margin:0 0 30px 0;
 text-align:center;
 opacity:0;
-color:#6C6C6C;
-text-shadow:black 1px 1px 0px, black 2px 2px 0px;
+color:#F1F1F1;
+text-shadow:#8B8B8B 1px 1px 0px, #464646 2px 2px 0px;
 }
 
 .jumbotron h2{
 text-align:center;
-margin-bottom:20px;
+margin-bottom:0px;
 opacity:0;
+color:#D0D0D0;
 }
 
 .jumbotron p {
   margin-bottom: 0px; }
 
-/* Approach */
-.background.approach {
-  padding-bottom: 30px; }
- 
-.approach .container .row h3{
-  	margin:70px auto 0 auto;
-	max-width:445px;
-	font-size:25px;
-  }
+/* ideas */
 
-.solar_container{
-  width:400px;
-  height:400px;
-  margin:auto;
-}
-
-.intro{
-	float:left;
+.ideas h2{
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
 #solar-system{
@@ -243,10 +271,11 @@ h2#team {
 	opacity:.7;
 	color:black;
 	padding:7px;
+	cursor:pointer;
 }
 
 .person .label strong{
-	font-weight:bold;
+	font-weight:700;
 	font-size:18px;
 	display:block;
 	margin-bottom:2px;
@@ -260,9 +289,11 @@ h2#team {
 img.headshot {
 	width:200px;
 	height:225px;
+	border:1px solid #e7e7e7;
   display: block;
   margin: auto;
-  opacity: .9;
+  opacity: .85;
+  cursor:pointer;
   transition: opacity .2s ease-in-out, transform .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out; }
 
@@ -287,6 +318,10 @@ img.headshot:hover {
 }
 
 /* Technology */
+
+.technology p.lead{
+	margin-bottom:5px;
+}
 
 .logo-container {
   max-width: 800px;
@@ -319,8 +354,9 @@ img.headshot:hover {
 
 /* Contact */
 .background.contact {
-  background-color: #3D3D3D;
+  background-color: transparent;
   color: #F8F8F8;
+  padding-bottom:150px;
 }
 
   h2#contact{

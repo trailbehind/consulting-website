@@ -44,25 +44,29 @@
 }
 
 .carousel span.glyphicon{
-	color:black;
+	color:#428bca;
 }
 
-.carousel a.carousel-control {
+/*.carousel a.carousel-control {
 	background-image:none;
-}
+}*/
 
 ol.carousel-indicators li{
 	border:1px solid black;
 	background-color: #428bca;
 }
 
-#gaia{
+#gaia-slide{
 	background-image:url('{{ site.baseurl }}/images/gaia_slide.gif');
 	opacity:.9;
 }
 
-#cloud{
+#cloud-slide{
 	background-image:url('{{ site.baseurl }}/images/cloud_slide_3.gif');
+}
+
+#site-slide{
+	background-image:url('{{ site.baseurl }}/images/web_slide.gif');
 }
 
 /* MARKETING CONTENT
