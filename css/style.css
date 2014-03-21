@@ -29,23 +29,6 @@ body {
 	letter-spacing: 2px;
 	}
 
-/* Flexbox mixin */
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
-.item {
-  -webkit-box-flex: 0 1 210px;
-  -webkit-flex: 0 1 210px;
-  -ms-flex: 0 1 210px;
-  flex: 0 1 210px;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 2;
-  -webkit-order: 2;
-  order: 2; }
-
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px; 
@@ -58,6 +41,12 @@ body {
 }
 
 /* Navbar */
+
+.navbar{
+	border-bottom:none;
+	box-shadow:#333 1px 1px 3px;
+}
+
 .navbar-default .navbar-nav > li:not(.active) > a:hover {
   background-color: #E6E6E6;
   border-bottom: 4px solid black;
@@ -108,34 +97,51 @@ h2.section {
 
 /* Jumbotron */
 .jumbotron {
-  border-bottom: 1px solid #D6D6D6;
+  border-bottom: 3px solid #D6D6D6;
+  box-shadow:#333 2px 2px 4px;
   margin-bottom: 0;
   background-color:transparent;
+ }
+ 
+ .jumbotron .container{
+	 margin-top:75px;
+	 margin-bottom:50px;
  }
 
 .jumbotron h1{
 margin:0 0 30px 0;
 text-align:center;
 opacity:0;
-color:#F1F1F1;
-text-shadow:#8B8B8B 1px 1px 0px, #464646 2px 2px 0px;
+color:#FAFAFA;
+text-shadow:#ABABAB 1px 1px 0px, #ABABAB 2px 2px 0px;
 }
 
 .jumbotron h2{
 text-align:center;
-margin-bottom:0px;
+margin-top:75px;
+margin-bottom:75px;
 opacity:0;
-color:#D0D0D0;
+color:#EDEDED;
 }
 
 .jumbotron p {
   margin-bottom: 0px; }
 
 /* ideas */
+  
+.background.ideas{
+	color:#FAFAFA;
+	background-color:transparent;
+}
+
+.ideas .col-md-6 p{
+	margin-top:20%;
+}
 
 .ideas h2{
+	text-align:center;
 	margin-top:30px;
-	margin-bottom:30px;
+	margin-bottom:0px;
 }
 
 #solar-system{
@@ -239,18 +245,6 @@ h2#team {
   width: 100%;
   margin-bottom: 0; }
 
-#people {
-  max-width: 800px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  align-items: flex-start;
-  align-content: flex-start;
-  -webkit-align-items: flex-start;
-  -webkit-align-content: flex-start; }
 
 .person {
   display: inline-block;
