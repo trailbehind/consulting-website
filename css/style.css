@@ -113,7 +113,6 @@ margin:0 0 30px 0;
 text-align:center;
 opacity:0;
 color:#FAFAFA;
-text-shadow:#ABABAB 1px 1px 0px, #ABABAB 2px 2px 0px;
 }
 
 .jumbotron h2{
@@ -130,12 +129,11 @@ color:#EDEDED;
 /* ideas */
   
 .background.ideas{
-	color:#FAFAFA;
-	background-color:transparent;
+	
 }
 
 .ideas .col-md-6 p{
-	margin-top:20%;
+	margin-top:5%;
 }
 
 .ideas h2{
