@@ -47,9 +47,6 @@
 	color:#428bca;
 }
 
-/*.carousel a.carousel-control {
-	background-image:none;
-}*/
 
 ol.carousel-indicators li{
 	border:1px solid black;
@@ -91,13 +88,13 @@ ol.carousel-indicators li{
   margin-left: 10px;
 }
 
+#cloud-sync{
+	padding-right:10%;
+}
+
 
 /* Featurettes
 ------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
 
 /* Thin out the marketing headings */
 .featurette-heading {
@@ -136,4 +133,18 @@ ol.carousel-indicators li{
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+@media screen and (max-width:760px){
+	.carousel-caption{
+		width:70%;
+	}
+	.carousel-caption h1{
+		font-size:29px;
+		line-height:40px;
+	}
+	
+	.carousel-caption p{
+		font-size:17px;
+	}
 }
