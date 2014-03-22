@@ -32,7 +32,7 @@ body {
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px; 
-  background: url('{{ site.baseurl }}/images/stardust_@2X.png') repeat 0 0;
+  background:url('http://subtlepatterns.com/patterns/dark_Tire.png');
 }
 
 .background{
@@ -87,6 +87,7 @@ h2.section {
   text-align: center;
   border-bottom: 2px solid #e7e7e7;
   border-top: 2px solid #e7e7e7;
+  background:url('http://subtlepatterns.com/patterns/gray_jean.png');
   background-color:#f8f8f8;
   margin:0;
   padding:5px;
@@ -100,7 +101,7 @@ h2.section {
   border-bottom: 3px solid #D6D6D6;
   box-shadow:#333 2px 2px 4px;
   margin-bottom: 0;
-  background: url('{{ site.baseurl }}/images/map-background.jpg') repeat 0 0;
+  background: url('{{ site.baseurl }}/images/map-background_2.jpg') repeat 0 0;
  }
  
  .jumbotron .container{
@@ -142,94 +143,6 @@ text-shadow:white 1px 1px 0px, white 2px 2px 0px;
 	margin-bottom:0px;
 }
 
-#solar-system{
-  width:400px;
-  height:400px;
-  margin:auto;
-  display:block;
-}
-
-g{
-  -webkit-transform-origin:center;
-  display:block;
-  margin:auto;
-}
-
-g text{
-  fill:white;
-}
-
-#sun2{
-  fill:#FF8F00;
-  opacity:.6;
-}
-
-#sun1{
-	fill:#FFFF00;
-}
-
-#ring1 circle{
-  stroke:#D6D6D6;
-  stroke-width:2px;
-  fill:transparent;
-}
-
-.planet{
-  fill:#428bca;
-  stroke:#357ebd;
-}
-
-.path{
-  fill:#3B7DB6;
-  stroke:black;
-  stroke-width:2px;
-  opacity:.08;
-}
-
-
-#ring2 circle{
-   stroke:#C1C1C1;
-  stroke-width:2px;
-  fill:transparent;
-}
-
-.solar_container tspan{
-	text-shadow:black -1px 1px;
-}
-
-
-.orbit_slow{
-  -webkit-animation-name:orbit_slow;
-  -webkit-animation-duration:13s;
-  -webkit-animation-iteration-count:infinite;
- -webkit-animation-timing-function:linear;
- animation-name:orbit_slow;
- animation-duration:13s;
- animation-iteration-count:infinite;
-animation-timing-function:linear;
-}
-
-.orbit_fast{
-  -webkit-animation-name:orbit_slow;
-  -webkit-animation-duration:9s;
-  -webkit-animation-iteration-count:infinite;
- -webkit-animation-timing-function:linear;
- animation-name:orbit_slow;
- animation-duration:9s;
- animation-iteration-count:infinite;
-animation-timing-function:linear;
-}
-
-
-@media screen and (max-width:420px){
-	#solar-system{
-		width:100%;
-		height:320px;
-	}
-	.solar_container{
-		width:100%;
-	}
-}
 
 /* Team */
 
@@ -353,7 +266,8 @@ img.headshot:hover {
 
   h2#contact{
 	  border-bottom:none;
-	  background-color:transparent;
+	  background:transparent;
+	  padding-top:20px;
   }
 
 .form-contact {
@@ -372,50 +286,4 @@ img.headshot:hover {
 
   /* Animation */
   
-  @-webkit-keyframes orbit_slow{
-    0%{
-      -webkit-transform:rotate(0deg);
-    }
-    50%{
-      -webkit-transform:rotate(180deg);
-    }
-    100%{
-       -webkit-transform:rotate(360deg);
-    }
-  }
-
-  @-webkit-keyframes orbit_fast{
-    0%{
-      -webkit-transform:rotate(0deg);
-    }
-    50%{
-      -webkit-transform:rotate(180deg);
-    }
-    100%{
-       -webkit-transform:rotate(360deg);
-    }
-  }
-  
-  @keyframes orbit_slow{
-    0%{
-      transform:rotate(0deg);
-    }
-    50%{
-      transform:rotate(180deg);
-    }
-    100%{
-       transform:rotate(360deg);
-    }
-  }
-
-  @keyframes orbit_fast{
-    0%{
-      transform:rotate(0deg);
-    }
-    50%{
-      transform:rotate(180deg);
-    }
-    100%{
-       transform:rotate(360deg);
-    }
-  }
+ 
