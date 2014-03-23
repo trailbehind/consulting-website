@@ -101,7 +101,7 @@ h2.section {
   border-bottom: 3px solid #D6D6D6;
   box-shadow:#333 2px 2px 4px;
   margin-bottom: 0;
-  background: url('{{ site.baseurl }}/images/map_background_2.jpg') repeat 0 0;
+  background: url('{{ site.baseurl }}/images/map_background_2.jpg') center;
   position:relative;
  }
  
