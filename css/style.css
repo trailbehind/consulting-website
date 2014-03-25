@@ -334,7 +334,7 @@ img.headshot:hover {
   /* Animation */
  @keyframes dash {
     from {
-      stroke-dashoffset: 1010;
+      stroke-dashoffset: -1010;
     }
     to {
       stroke-dashoffset: 0;
@@ -343,7 +343,7 @@ img.headshot:hover {
  
   @-webkit-keyframes dash {
     from {
-      stroke-dashoffset: 1010;
+      stroke-dashoffset: -1010;
     }
     to {
       stroke-dashoffset: 0;
