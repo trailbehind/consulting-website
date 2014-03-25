@@ -32,7 +32,8 @@ body {
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px; 
-  background:url('http://subtlepatterns.com/patterns/dark_Tire.png');
+  background:url('{{ site.baseurl }}/images/cartographer@2X.jpg') repeat 0 0;
+  background-size:500px 500px;
 }
 
 .background{
@@ -87,7 +88,7 @@ h2.section {
   text-align: center;
   border-bottom: 2px solid #e7e7e7;
   border-top: 2px solid #e7e7e7;
-  background:url('http://subtlepatterns.com/patterns/gray_jean.png');
+  background:transparent;
   background-color:#f8f8f8;
   margin:0;
   padding:5px;
@@ -101,8 +102,10 @@ h2.section {
   border-bottom: 3px solid #D6D6D6;
   box-shadow:#333 2px 2px 4px;
   margin-bottom: 0;
-  background: url('{{ site.baseurl }}/images/map_background_2.jpg') center;
+  background: transparent;
   position:relative;
+  padding-top:25px;
+  padding-bottom:25px;
  }
  
  .jumbotron .container{
@@ -134,13 +137,15 @@ h2.section {
 margin:0 0 30px 0;
 text-align:center;
 opacity:0;
-text-shadow:white 1px 1px 0px, white 2px 2px 0px, white 3px 3px 0px;
+color:white;
+text-shadow:#454545 1px 1px 0px, #454545 2px 2px 0px, #454545 3px 3px 0px;
 }
 
 .jumbotron h2{
 text-align:center;
 opacity:0;
-text-shadow:white 1px 1px 0px, white 2px 2px 0px;
+color:white;
+text-shadow:#454545 1px 1px 0px, #454545 2px 2px 0px;
 }
 
 .jumbotron svg{
