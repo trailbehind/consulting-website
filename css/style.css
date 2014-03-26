@@ -34,6 +34,9 @@ body {
   padding-top: 50px; 
   background:url('{{ site.baseurl }}/images/map_background_2.jpg');
   background-size:500px 500px;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center; 
 }
 
 .background{
