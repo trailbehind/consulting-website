@@ -32,7 +32,7 @@ body {
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px; 
-  background:url('{{ site.baseurl }}/images/cartographer@2X.jpg') repeat 0 0;
+  background:url('{{ site.baseurl }}/images/map_background_2.jpg') repeat 0 0;
   background-size:500px 500px;
 }
 
