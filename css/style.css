@@ -33,9 +33,8 @@ body {
   
 */
 body {
-	padding-top:50px;
-    background:url('{{ site.baseurl }}/images/map_background_2.jpg');
-  background-repeat:no-repeat;
+padding-top: 50px; 
+  background:url('{{ site.baseurl }}/images/cartographer@2X.jpg') repeat 0 0;
 }
 
 .background{
