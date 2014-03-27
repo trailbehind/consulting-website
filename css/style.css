@@ -309,7 +309,7 @@ img.headshot:hover {
 
 /* Contact */
 .background.contact {
-  background-color: transparent;
+  background-color: black;
   color: #F8F8F8;
   padding-bottom:150px;
 }
