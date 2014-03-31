@@ -1,11 +1,9 @@
 $(document).ready(function(){
-	hashLinks();
-	scrollLinks(1000);
-	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 90 });
-	$(".jumbotron h1").fadeTo(1250, 1, "easeInOutCubic", function(){
+	$(".jumbotron h1").fadeTo(1250, 1, "easeInOutCubic", function(){ // Fade in headline
 		$(".jumbotron h2").fadeTo(1500, 1, "easeInOutCubic");
 	});
-	hashLinks();
+	scrollLinks(1000); // Scroll to the appropriate window location when clicking nav links
+	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 90 }); // Bootstrap plugin for highlighting navbar on scroll
 })
 
 function scrollLinks(speed){
@@ -22,8 +20,4 @@ function scrollLinks(speed){
     	});
 	    return false;
 	});
-}
-
-function hashLinks(){
-	
 }
