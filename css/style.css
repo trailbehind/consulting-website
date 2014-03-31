@@ -47,6 +47,7 @@ body {
 
 .navbar{
 	border-bottom:none;
+	-webkit-box-shadow:#333 1px 1px 3px;
 	box-shadow:#333 1px 1px 3px;
 }
 
@@ -102,12 +103,15 @@ h2.section {
 /* Jumbotron */
 .jumbotron {
   border-bottom: 3px solid #D6D6D6;
+  -webkit-box-shadow:#333 2px 2px 4px;
   box-shadow:#333 2px 2px 4px;
   margin-bottom: 0;
   background: url('http://www.unchartedapps.com/images/map_background_2.jpg') center center;
   position:relative;
   padding-top:25px;
   padding-bottom:25px;
+ 
+  -webkit-background-size: 1590px 558px;
  
   background-size: 1590px 558px;
   /* background-repeat: no-repeat; */
@@ -123,6 +127,8 @@ h2.section {
 	 left:0;
 	 top:0;
 	 width:15%;
+	 background-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,.5)), to(rgba(0,0,0,.0001)));
+	 background-image:-webkit-linear-gradient(left, rgba(0,0,0,.5) 0, rgba(0,0,0,.0001) 100%);
 	 background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
 	 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 	 height:100%;
@@ -133,6 +139,8 @@ h2.section {
 	 right:0;
 	 top:0;
 	 width:15%;
+ 	background-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,.0001)), to(rgba(0,0,0,.5)));
+ 	background-image:-webkit-linear-gradient(left, rgba(0,0,0,.0001) 0, rgba(0,0,0,.5) 100%);
  	background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
 	progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 	height:100%;
@@ -295,6 +303,7 @@ img.headshot:hover {
   height: 90px;
   display: block;
   opacity: .75;
+  -ms-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9);
   -webkit-transform: scale(0.9, 0.9);
   transition: opacity .2s ease-in-out, transform .2s ease-in-out;
@@ -303,6 +312,7 @@ img.headshot:hover {
 
 .tech img.logo:hover {
   opacity: 1;
+  -ms-transform: scale(1, 1);
   transform: scale(1, 1);
   -webkit-transform: scale(1, 1); }
 
@@ -321,6 +331,7 @@ img.headshot:hover {
 	  background:transparent;
 	  padding-top:20px;
   }
+  
 
 .form-contact {
   max-width: 330px;
