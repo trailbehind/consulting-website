@@ -4,6 +4,20 @@ $(document).ready(function(){
 	});
 	scrollLinks(1000); // Scroll to the appropriate window location when clicking nav links
 	$('body').scrollspy({ target: '#bs-example-navbar-collapse-1', offset: 90 }); // Bootstrap plugin for highlighting navbar on scroll
+    $('.form-contact').submit(function(){
+      $.ajax({
+        dataType: 'jsonp',
+        url: "http://getsimpleform.com/messages/ajax?form_api_token=9b13afc776663f71eb50042377d81f68",
+        data: $('.form-contact').serialize() 
+      }).done(function() {
+        //callback which can be used to show a thank you message
+        //and reset the form
+        alert("Thank you for contacting Uncharted Apps.");
+		$('.form-contact .btn').addClass('btn-success').html('Submitted');
+      });
+      return false; //to stop the form from submitting
+    });
+  
 })
 
 function scrollLinks(speed){
